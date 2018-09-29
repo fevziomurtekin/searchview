@@ -30,7 +30,7 @@ allprojects {
 	        implementation 'com.github.fevziomurtekin:lockscreen:0.1.1'
 	  }
 	}
-	```
+```
   </br> Include layout.
   `
   ```Gradle
@@ -39,7 +39,7 @@ allprojects {
         android:layout_height="wrap_content"
         android:id="@+id/search"
         />
-      ```  
+``` 
         
   </br> Include in the activity 
   ```Gradle 
@@ -64,17 +64,12 @@ allprojects {
 
   | Attribute | Description |
 | --- | --- |
-| `title` | Default text, "Enter your password. " |
-| `titleSize` | The size in sp of the title text size (by default 15sp) |
-| `titleColor` | The color in int of the title text color (R.color.black) |
-| `message` | The value in string of the message items (by default "Log in with your password or fingerprint reader.")  |
-| `messageSize` |The size in sp of the message text size (by default 14sp) |
-| `messageColor` | The color in int of the title text color (R.color.black) |
-| `error` | The value in string of the error items (by default "You entered an incorrect password. Please try again.") |
-| `errorSize` | The size in sp of the title text size (by default 14sp) |
-| `errorColor` | The color in int of the title text color (R.color.red) |
-| `intent` | It is for transferring to another class when successfully logged in |
-| `pass` | The value in string of the password items (by default "1234") |
+| `searchhint` | Default text, "Search. " |
+| `animationtime` |The size of the animation time is int (by default 250 ) |
+| `searchtextcolor` | The color in int of the title text color (R.color.textcolor => #3F51B5) |
+| `resulttextcolor` | The color in int of the title text color (R.color.textcolor => #3F51B5) |
+| `searchsize` |The size in sp of the message text size (by default 14sp) |
+| `resultsize`|The size in sp of the message text size (by default 14sp) |
 
 
 ## License
