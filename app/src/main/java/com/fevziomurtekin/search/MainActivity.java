@@ -49,9 +49,9 @@ public class MainActivity extends AppCompatActivity implements TextWatcher {
         searchView      . setSearchView_hint("Search");
         searchView      . setResult_textSize(14f);
         searchView      . setSearchView_animationTime(250);
-        searchView      . setSearchView_textColor(getResources().getColor(R.color.borderColor));
+        searchView      . setSearchView_textColor(getResources().getColor(R.color.textcolor));
         searchView      . setResult_textSize(14f);
-        searchView      . setResult_textColor(getResources().getColor(R.color.borderColor));
+        searchView      . setResult_textColor(getResources().getColor(R.color.textcolor));
 
     }
 
