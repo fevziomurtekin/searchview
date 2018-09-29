@@ -2,16 +2,18 @@
 A beautiful searchview with animations.
 
 # Screens
+<center>
 <table>
   <tr>
     <th>SearchView Animation.</th>
   </tr>
-  <tr>
+ <tr>
     <td>
-      <center><img src="/screen/pincode.gif" width="250" height="350" /></center>
-    </td>
-  </tr>
+      <img src="/screen/search.gif" width="250" height="350" /
+   </td>
+ <tr>
 </table>
+	</center>	
 </br>
 
 # Usage
