@@ -27,7 +27,7 @@ allprojects {
   .....
 
   dependencies {
-	        implementation 'com.github.fevziomurtekin:lockscreen:0.1.1'
+	        implementation 'com.github.fevziomurtekin:SearchView:0.1.0'
 	  }
 	}
 ```
