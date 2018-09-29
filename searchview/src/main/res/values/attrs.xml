@@ -3,10 +3,9 @@
     <declare-styleable name="searchView">
         <attr name="searchhint" format="string"/>
         <attr name="animationtime" format="integer"/>
-        <attr name="bordercolor" format="integer"/>
-        <attr name="solidcolor" format="integer"/>
-        <attr name="stroke" format="integer"/>
-        <attr name="radius" format="float"/>
-        <attr name="drawablepadding" format="integer"/>
+        <attr name="searchsize" format="float"/>
+        <attr name="resultsize" format="float"/>
+        <attr name="searchtextcolor" format="integer"/>
+        <attr name="resulttextcolor" format="integer" />
     </declare-styleable>
 </resources>

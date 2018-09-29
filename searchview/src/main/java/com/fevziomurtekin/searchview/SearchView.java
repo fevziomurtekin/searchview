@@ -53,8 +53,6 @@ public class SearchView extends RelativeLayout implements View.OnClickListener, 
 
     private boolean isAnimating = false;
 
-    private String textWatcher; /*if called this when Text onChanged*/
-
     private SharedPreferences sharedPreferences;
 
     private Context context;
@@ -83,6 +81,10 @@ public class SearchView extends RelativeLayout implements View.OnClickListener, 
         typedArray                  = context.obtainStyledAttributes(attrs, R.styleable.searchView);
         searchView_hint             = typedArray.getString(R.styleable.searchView_searchhint);
         searchView_animationTime    = typedArray.getInt(R.styleable.searchView_animationtime,250);
+        searchView_textColor        = typedArray.getInt(R.styleable.searchView_searchtextcolor,R.color.textcolor);
+        result_textColor            = typedArray.getInt(R.styleable.searchView_resulttextcolor,R.color.textcolor);
+        result_textSize             = typedArray.getFloat(R.styleable.searchView_resultsize,14f);
+        searchView_textSize         = typedArray.getFloat(R.styleable.searchView_searchsize,14f);
 
 
         typedArray.recycle();
@@ -94,6 +96,10 @@ public class SearchView extends RelativeLayout implements View.OnClickListener, 
         typedArray                  = context.obtainStyledAttributes(attrs, R.styleable.searchView);
         searchView_hint             = typedArray.getString(R.styleable.searchView_searchhint);
         searchView_animationTime    = typedArray.getInt(R.styleable.searchView_animationtime,250);
+        searchView_textColor        = typedArray.getInt(R.styleable.searchView_searchtextcolor,R.color.textcolor);
+        result_textColor            = typedArray.getInt(R.styleable.searchView_resulttextcolor,R.color.textcolor);
+        result_textSize             = typedArray.getFloat(R.styleable.searchView_resultsize,14f);
+        searchView_textSize         = typedArray.getFloat(R.styleable.searchView_searchsize,14f);
         typedArray.recycle();
     }
 
@@ -153,7 +159,7 @@ public class SearchView extends RelativeLayout implements View.OnClickListener, 
         searchView                          . setPadding(15,5,5,5);
         searchView                          . setImeOptions(EditorInfo.IME_ACTION_SEARCH);
         searchView                          . setTextSize(searchView_textSize);  /*Default text size.*/
-        searchView                          . setTextColor(searchView_textColor); /*Default text color.*/
+            searchView                          . setTextColor(searchView_textColor); /*Default text color.*/
         searchView                          . setCursorVisible(false);
         searchView                          . setHint("");
         searchView                          . setHintTextColor(searchView_textColor);
@@ -277,23 +283,9 @@ public class SearchView extends RelativeLayout implements View.OnClickListener, 
     }
 
 
-    public String getTextChanged() {
-        return textWatcher;
-    }
+
 
     /*get-set Method.*/
-
-    public void setTextWatcher(String textWatcher) {
-        this.textWatcher = textWatcher;
-    }
-
-    public String getTextWatcher() {
-        return textWatcher;
-    }
-
-    public void setAnimating(boolean animating) {
-        isAnimating = animating;
-    }
 
     public void setSearchView_hint(String searchView_hint) {
         this.searchView_hint = searchView_hint;
@@ -308,13 +300,15 @@ public class SearchView extends RelativeLayout implements View.OnClickListener, 
         this.searchView_textColor = searchView_textColor;
     }
 
-    public float getResult_textSize() {
-        return result_textSize;
+    public void setResult_textColor(int result_textColor) {
+        this.result_textColor = result_textColor;
     }
 
-    public int getResult_textColor() {
-        return result_textColor;
+    public void setSearchView_textSize(float searchView_textSize) {
+        this.searchView_textSize = searchView_textSize;
     }
+
+
 
     public void setResult_textSize(float result_textSize) {
         this.result_textSize = result_textSize;

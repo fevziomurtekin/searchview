@@ -40,10 +40,18 @@ public class MainActivity extends AppCompatActivity implements TextWatcher {
         for (String s:strings) {
             stringList.add(s);
         }
-        searchView      = new SearchView(getApplicationContext());
         recyclerView    = findViewById(R.id.recycler);
         recyclerView    .setLayoutManager(new LinearLayoutManager(getApplicationContext(),LinearLayoutManager.VERTICAL,false));
         recyclerView    .setAdapter(new Adapter(this,stringList,strings));
+
+
+        searchView      = new SearchView(getApplicationContext());
+        searchView      . setSearchView_hint("Search");
+        searchView      . setResult_textSize(14f);
+        searchView      . setSearchView_animationTime(250);
+        searchView      . setSearchView_textColor(getResources().getColor(R.color.borderColor));
+        searchView      . setResult_textSize(14f);
+        searchView      . setResult_textColor(getResources().getColor(R.color.borderColor));
 
     }
 
