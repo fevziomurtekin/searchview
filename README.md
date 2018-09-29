@@ -45,7 +45,7 @@ allprojects {
         
   </br> Include in the activity 
   ```Gradle 
- public class MainActivity extends LookScreen {
+public class MainActivity extends AppCompatActivity implements TextWatcher {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
