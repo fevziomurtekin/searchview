@@ -29,7 +29,7 @@ allprojects {
   .....
 
   dependencies {
-	        implementation 'com.github.fevziomurtekin:SearchView:0.1.0'
+	        implementation 'com.github.fevziomurtekin:SearchView:0.1.1'
 	  }
 	}
 ```
