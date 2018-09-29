@@ -53,7 +53,7 @@ allprojects {
         setContentView(R.layout.activity_main);
         searchView      = new SearchView(getApplicationContext());
         searchView      . setSearchView_hint("Search");
-        searchView      . setResult_textSize(14f);
+        searchView      . setSearchView_textSize(14f);
         searchView      . setSearchView_animationTime(250);
         searchView      . setSearchView_textColor(getResources().getColor(R.color.borderColor));
         searchView      . setResult_textSize(14f);
@@ -70,8 +70,8 @@ allprojects {
 | `animationtime` |The size of the animation time is int (by default 250 ) |
 | `searchtextcolor` | The color in int of the title text color (R.color.textcolor => #3F51B5) |
 | `resulttextcolor` | The color in int of the title text color (R.color.textcolor => #3F51B5) |
-| `searchsize` |The size in sp of the message text size (by default 14sp) |
-| `resultsize`|The size in sp of the message text size (by default 14sp) |
+| `searchsize` |The size in sp of the search text size (by default 14sp) |
+| `resultsize`|The size in sp of the result text size (by default 14sp) |
 
 
 ## License
