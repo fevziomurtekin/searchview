@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="searchView">
+        <attr name="searchhint" format="string"/>
+        <attr name="animationtime" format="integer"/>
+        <attr name="bordercolor" format="integer"/>
+        <attr name="solidcolor" format="integer"/>
+        <attr name="stroke" format="integer"/>
+        <attr name="radius" format="float"/>
+        <attr name="drawablepadding" format="integer"/>
+    </declare-styleable>
+</resources>
